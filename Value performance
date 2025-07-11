@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int integer = 4;
+    float float_num = 5.678;
+
+    // Display numbers
+    printf("%d\n", integer);
+    printf("%.2f\n", float_num);
+
+    return 0;
+}
