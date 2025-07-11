@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double float_value = 76.78;
+    double square_value = 16;
+    double base_value = 2;
+    double power_value = 3;
+
+    printf("%.0lf\n", floor(float_value));
+    printf("%.0lf\n", ceil(float_value));
+    printf("%.0lf\n", sqrt(square_value));
+    printf("%.0lf\n", pow(base_value, power_value));
+
+    return 0;
+}
