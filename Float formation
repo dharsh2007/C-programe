@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    double num;
+
+    // Get input from user
+    scanf("%lf", &num);
+
+    // Print decimal values
+    printf("%.6lf\n", num);  // 6 decimal places
+    printf("%.4lf\n", num);  // 4 decimal places
+    printf("%.2lf\n", num);  // 2 decimal places
+    printf("%.0lf\n", num);  // rounded to nearest integer
+
+    return 0;
+}
