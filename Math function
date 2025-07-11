@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double float_value = 76.78;
+    int square_value = 16;
+    int base_value = 2;
+    int power_value = 3;
+
+    // Calculate math functions
+    double floor_result = floor(float_value);
+    double ceil_result = ceil(float_value);
+    double sqrt_result = sqrt(square_value);
+    double pow_result = pow(base_value, power_value);
+
+    // Display results
+    printf("%.0lf\n", floor_result);
+    printf("%.0lf\n", ceil_result);
+    printf("%.0lf\n", sqrt_result);
+    printf("%.0lf\n", pow_result);
+
+    return 0;
+}
