@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    scanf("%d", &num);
+
+
+    int last_digit = num % 10;
+    int second_last_digit = (num / 10) % 10;
+
+    
+    int swapped_num = (num / 10 / 10) * 100 + last_digit * 10 + second_last_digit;
+
+    
+    if (num < 100) {
+        swapped_num = last_digit * 10 + second_last_digit;
+    } else {
+        
+        int remaining = num / 100;
+        swapped_num = remaining * 100 + last_digit * 10 + second_last_digit;
+    }
+
+    
+    if (num >= 100) {
+        printf("%d%d\n", last_digit, second_last_digit);
+    } else {
+        printf("%d\n", swapped_num);
+    }
+
+    return 0;
+}
