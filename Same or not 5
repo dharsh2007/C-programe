@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int size, num, even = 0, odd = 0;
+
+    
+    scanf("%d", &size);
+
+
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &num);
+
+        if (num % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    
+    if (even == size)
+        printf("Even\n");
+    else if (odd == size)
+        printf("Odd\n");
+    else
+        printf("Mixed\n");
+
+    return 0;
+}
